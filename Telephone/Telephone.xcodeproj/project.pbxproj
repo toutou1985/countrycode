@@ -9,12 +9,15 @@
 /* Begin PBXBuildFile section */
 		91A1CAA11B9017CD009CF85D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 91A1CAA01B9017CD009CF85D /* main.m */; };
 		91A1CAA41B9017CD009CF85D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 91A1CAA31B9017CD009CF85D /* AppDelegate.m */; };
-		91A1CAA71B9017CD009CF85D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91A1CAA61B9017CD009CF85D /* ViewController.m */; };
 		91A1CAAA1B9017CD009CF85D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91A1CAA81B9017CD009CF85D /* Main.storyboard */; };
 		91A1CAAC1B9017CD009CF85D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91A1CAAB1B9017CD009CF85D /* Images.xcassets */; };
 		91A1CAAF1B9017CD009CF85D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91A1CAAD1B9017CD009CF85D /* LaunchScreen.xib */; };
 		91A1CABB1B9017CD009CF85D /* TelephoneTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 91A1CABA1B9017CD009CF85D /* TelephoneTests.m */; };
-		91A1CAC51B901C41009CF85D /* Telephone.plist in Resources */ = {isa = PBXBuildFile; fileRef = 91A1CAC41B901C41009CF85D /* Telephone.plist */; };
+		91A1CACB1B9032E6009CF85D /* TelephoneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91A1CAC91B9032E6009CF85D /* TelephoneViewController.m */; };
+		91A1CACC1B9032E6009CF85D /* TelephoneViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91A1CACA1B9032E6009CF85D /* TelephoneViewController.xib */; };
+		91A1CACE1B904196009CF85D /* TelephoneEn.plist in Resources */ = {isa = PBXBuildFile; fileRef = 91A1CACD1B904196009CF85D /* TelephoneEn.plist */; };
+		91A1CAD11B904A94009CF85D /* ControyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91A1CAD01B904A94009CF85D /* ControyViewController.m */; };
+		91A1CADC1B90570F009CF85D /* CountryTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 91A1CADB1B90570F009CF85D /* CountryTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,15 +36,20 @@
 		91A1CAA01B9017CD009CF85D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		91A1CAA21B9017CD009CF85D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		91A1CAA31B9017CD009CF85D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		91A1CAA51B9017CD009CF85D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		91A1CAA61B9017CD009CF85D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		91A1CAA91B9017CD009CF85D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		91A1CAAB1B9017CD009CF85D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		91A1CAAE1B9017CD009CF85D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		91A1CAB41B9017CD009CF85D /* TelephoneTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TelephoneTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		91A1CAB91B9017CD009CF85D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		91A1CABA1B9017CD009CF85D /* TelephoneTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TelephoneTests.m; sourceTree = "<group>"; };
-		91A1CAC41B901C41009CF85D /* Telephone.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Telephone.plist; sourceTree = "<group>"; };
+		91A1CAC81B9032E6009CF85D /* TelephoneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TelephoneViewController.h; sourceTree = "<group>"; };
+		91A1CAC91B9032E6009CF85D /* TelephoneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TelephoneViewController.m; sourceTree = "<group>"; };
+		91A1CACA1B9032E6009CF85D /* TelephoneViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TelephoneViewController.xib; sourceTree = "<group>"; };
+		91A1CACD1B904196009CF85D /* TelephoneEn.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = TelephoneEn.plist; sourceTree = "<group>"; };
+		91A1CACF1B904A94009CF85D /* ControyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ControyViewController.h; sourceTree = "<group>"; };
+		91A1CAD01B904A94009CF85D /* ControyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ControyViewController.m; sourceTree = "<group>"; };
+		91A1CADA1B90570F009CF85D /* CountryTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CountryTableViewCell.h; sourceTree = "<group>"; };
+		91A1CADB1B90570F009CF85D /* CountryTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CountryTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,8 +93,13 @@
 			children = (
 				91A1CAA21B9017CD009CF85D /* AppDelegate.h */,
 				91A1CAA31B9017CD009CF85D /* AppDelegate.m */,
-				91A1CAA51B9017CD009CF85D /* ViewController.h */,
-				91A1CAA61B9017CD009CF85D /* ViewController.m */,
+				91A1CAC81B9032E6009CF85D /* TelephoneViewController.h */,
+				91A1CAC91B9032E6009CF85D /* TelephoneViewController.m */,
+				91A1CACA1B9032E6009CF85D /* TelephoneViewController.xib */,
+				91A1CACF1B904A94009CF85D /* ControyViewController.h */,
+				91A1CAD01B904A94009CF85D /* ControyViewController.m */,
+				91A1CADA1B90570F009CF85D /* CountryTableViewCell.h */,
+				91A1CADB1B90570F009CF85D /* CountryTableViewCell.m */,
 				91A1CAA81B9017CD009CF85D /* Main.storyboard */,
 				91A1CAAB1B9017CD009CF85D /* Images.xcassets */,
 				91A1CAAD1B9017CD009CF85D /* LaunchScreen.xib */,
@@ -99,7 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				91A1CA9F1B9017CD009CF85D /* Info.plist */,
-				91A1CAC41B901C41009CF85D /* Telephone.plist */,
+				91A1CACD1B904196009CF85D /* TelephoneEn.plist */,
 				91A1CAA01B9017CD009CF85D /* main.m */,
 			);
 			name = "Supporting Files";
@@ -203,9 +216,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				91A1CAAA1B9017CD009CF85D /* Main.storyboard in Resources */,
-				91A1CAC51B901C41009CF85D /* Telephone.plist in Resources */,
 				91A1CAAF1B9017CD009CF85D /* LaunchScreen.xib in Resources */,
 				91A1CAAC1B9017CD009CF85D /* Images.xcassets in Resources */,
+				91A1CACC1B9032E6009CF85D /* TelephoneViewController.xib in Resources */,
+				91A1CACE1B904196009CF85D /* TelephoneEn.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -223,9 +237,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				91A1CAA71B9017CD009CF85D /* ViewController.m in Sources */,
+				91A1CACB1B9032E6009CF85D /* TelephoneViewController.m in Sources */,
 				91A1CAA41B9017CD009CF85D /* AppDelegate.m in Sources */,
 				91A1CAA11B9017CD009CF85D /* main.m in Sources */,
+				91A1CAD11B904A94009CF85D /* ControyViewController.m in Sources */,
+				91A1CADC1B90570F009CF85D /* CountryTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -418,6 +434,7 @@
 				91A1CAC01B9017CD009CF85D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		91A1CAC11B9017CD009CF85D /* Build configuration list for PBXNativeTarget "TelephoneTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +443,7 @@
 				91A1CAC31B9017CD009CF85D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="13F1096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TelephoneViewController">
+            <connections>
+                <outlet property="confirmBtn" destination="MkT-RY-rSY" id="eVw-gf-FZ2"/>
+                <outlet property="countryNum" destination="q3y-jG-c5y" id="ToY-YA-pFA"/>
+                <outlet property="phoneNum" destination="AAe-fG-ogQ" id="T6i-Ic-65P"/>
+                <outlet property="pickviewBtn" destination="ca6-ci-dtw" id="q5C-g6-bFW"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PHe-Ph-az2">
+                    <rect key="frame" x="8" y="27" width="30" height="30"/>
+                    <state key="normal">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="電話番号認証" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CRH-Mr-bv4">
+                    <rect key="frame" x="71" y="20" width="178" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="FZK-Qe-3ZZ"/>
+                        <constraint firstAttribute="width" constant="178" id="dUT-Tl-zeg"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M1t-Fj-oWw">
+                    <rect key="frame" x="28" y="137" width="259" height="1"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="2BO-Y3-UOs"/>
+                        <constraint firstAttribute="width" constant="259" id="Y7s-qB-MiY"/>
+                    </constraints>
+                </view>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="国番号" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="q3y-jG-c5y">
+                    <rect key="frame" x="28" y="108" width="259" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="5q0-lb-V4f"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="電話番号を入力して「認証用コードを送信」をタップしてください。" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cke-zl-vxG">
+                    <rect key="frame" x="0.0" y="58" width="320" height="11"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Qym-0j-tdq">
+                    <rect key="frame" x="28" y="203" width="259" height="1"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="電話番号" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AAe-fG-ogQ">
+                    <rect key="frame" x="31" y="174" width="259" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="259" id="6Wu-de-tVB"/>
+                        <constraint firstAttribute="height" constant="30" id="JY4-05-dlE"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MkT-RY-rSY">
+                    <rect key="frame" x="47" y="225" width="227" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="Ns0-F3-DBI"/>
+                        <constraint firstAttribute="width" constant="227" id="bH5-vB-t99"/>
+                    </constraints>
+                    <state key="normal" title="認証用コードを送信">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="「認証用コードを送信」をタップすると、電話番号を認証するためSMSメッセージが送信されます。" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zkt-y2-IfZ">
+                    <rect key="frame" x="31" y="280" width="259" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="259" id="rsH-cl-YMz"/>
+                        <constraint firstAttribute="height" constant="40" id="wfn-u8-gUH"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ca6-ci-dtw">
+                    <rect key="frame" x="257" y="108" width="30" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="30" id="2fR-9Y-Bdl"/>
+                        <constraint firstAttribute="height" constant="30" id="J4a-Bb-pLb"/>
+                    </constraints>
+                    <state key="normal">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="pickviewBtn:" destination="-1" eventType="touchUpInside" id="SVV-SE-YDc"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SMS認証は一つの電話番号電話番号につき１度だけ利用できます。" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HHz-UD-NWb">
+                    <rect key="frame" x="31" y="333" width="259" height="27"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="27" id="eFl-de-ZTG"/>
+                        <constraint firstAttribute="width" constant="259" id="mgd-Cc-809"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="AAe-fG-ogQ" firstAttribute="top" secondItem="q3y-jG-c5y" secondAttribute="bottom" constant="36" id="8oz-ch-uBs"/>
+                <constraint firstItem="M1t-Fj-oWw" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="28" id="AO9-bY-dSv"/>
+                <constraint firstItem="Cke-zl-vxG" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="MV9-zB-7iu"/>
+                <constraint firstAttribute="centerX" secondItem="zkt-y2-IfZ" secondAttribute="centerX" id="P4i-JQ-dVH"/>
+                <constraint firstAttribute="centerX" secondItem="HHz-UD-NWb" secondAttribute="centerX" id="PV4-7P-O5f"/>
+                <constraint firstItem="HHz-UD-NWb" firstAttribute="top" secondItem="zkt-y2-IfZ" secondAttribute="bottom" constant="13" id="Q7q-E3-D1Y"/>
+                <constraint firstAttribute="trailing" secondItem="q3y-jG-c5y" secondAttribute="trailing" constant="33" id="T81-LD-Uc6"/>
+                <constraint firstItem="Cke-zl-vxG" firstAttribute="top" secondItem="CRH-Mr-bv4" secondAttribute="bottom" constant="8" id="XJz-49-tqD"/>
+                <constraint firstItem="CRH-Mr-bv4" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="XZU-WC-43S"/>
+                <constraint firstAttribute="centerX" secondItem="CRH-Mr-bv4" secondAttribute="centerX" id="ZZz-QF-HMe"/>
+                <constraint firstItem="zkt-y2-IfZ" firstAttribute="top" secondItem="MkT-RY-rSY" secondAttribute="bottom" constant="25" id="cJh-Jy-wjm"/>
+                <constraint firstItem="q3y-jG-c5y" firstAttribute="top" secondItem="Cke-zl-vxG" secondAttribute="bottom" constant="39" id="e6A-dS-0MG"/>
+                <constraint firstItem="MkT-RY-rSY" firstAttribute="top" secondItem="AAe-fG-ogQ" secondAttribute="bottom" constant="21" id="eKw-nq-Gmr"/>
+                <constraint firstItem="q3y-jG-c5y" firstAttribute="top" secondItem="ca6-ci-dtw" secondAttribute="top" id="eeb-XP-UhG"/>
+                <constraint firstAttribute="centerX" secondItem="MkT-RY-rSY" secondAttribute="centerX" id="etb-06-uFp"/>
+                <constraint firstAttribute="trailing" secondItem="Cke-zl-vxG" secondAttribute="trailing" id="h7x-qG-uHd"/>
+                <constraint firstAttribute="centerX" secondItem="AAe-fG-ogQ" secondAttribute="centerX" id="kOK-Wb-W59"/>
+                <constraint firstAttribute="trailing" secondItem="M1t-Fj-oWw" secondAttribute="trailing" constant="33" id="l2S-aN-I3g"/>
+                <constraint firstAttribute="centerX" secondItem="Cke-zl-vxG" secondAttribute="centerX" id="mD5-kY-5Em"/>
+                <constraint firstItem="M1t-Fj-oWw" firstAttribute="top" secondItem="q3y-jG-c5y" secondAttribute="bottom" constant="-1" id="qWA-An-mNx"/>
+                <constraint firstItem="q3y-jG-c5y" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="28" id="qg5-DR-DiR"/>
+                <constraint firstAttribute="trailing" secondItem="ca6-ci-dtw" secondAttribute="trailing" constant="33" id="uL1-8K-m2i"/>
+            </constraints>
+            <point key="canvasLocation" x="140" y="155"/>
+        </view>
+    </objects>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
