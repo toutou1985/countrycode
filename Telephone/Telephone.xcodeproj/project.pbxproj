@@ -18,6 +18,8 @@
 		91A1CACE1B904196009CF85D /* TelephoneEn.plist in Resources */ = {isa = PBXBuildFile; fileRef = 91A1CACD1B904196009CF85D /* TelephoneEn.plist */; };
 		91A1CAD11B904A94009CF85D /* ControyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91A1CAD01B904A94009CF85D /* ControyViewController.m */; };
 		91A1CADC1B90570F009CF85D /* CountryTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 91A1CADB1B90570F009CF85D /* CountryTableViewCell.m */; };
+		91A363CC1B9535A600D90D7B /* TelephoneJP.plist in Resources */ = {isa = PBXBuildFile; fileRef = 91A363CB1B9535A600D90D7B /* TelephoneJP.plist */; };
+		91A363CF1B9537BF00D90D7B /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 91A363CE1B9537BF00D90D7B /* Utils.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +52,9 @@
 		91A1CAD01B904A94009CF85D /* ControyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ControyViewController.m; sourceTree = "<group>"; };
 		91A1CADA1B90570F009CF85D /* CountryTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CountryTableViewCell.h; sourceTree = "<group>"; };
 		91A1CADB1B90570F009CF85D /* CountryTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CountryTableViewCell.m; sourceTree = "<group>"; };
+		91A363CB1B9535A600D90D7B /* TelephoneJP.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = TelephoneJP.plist; sourceTree = "<group>"; };
+		91A363CD1B9537BF00D90D7B /* Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utils.h; sourceTree = "<group>"; };
+		91A363CE1B9537BF00D90D7B /* Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utils.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +105,8 @@
 				91A1CAD01B904A94009CF85D /* ControyViewController.m */,
 				91A1CADA1B90570F009CF85D /* CountryTableViewCell.h */,
 				91A1CADB1B90570F009CF85D /* CountryTableViewCell.m */,
+				91A363CD1B9537BF00D90D7B /* Utils.h */,
+				91A363CE1B9537BF00D90D7B /* Utils.m */,
 				91A1CAA81B9017CD009CF85D /* Main.storyboard */,
 				91A1CAAB1B9017CD009CF85D /* Images.xcassets */,
 				91A1CAAD1B9017CD009CF85D /* LaunchScreen.xib */,
@@ -113,6 +120,7 @@
 			children = (
 				91A1CA9F1B9017CD009CF85D /* Info.plist */,
 				91A1CACD1B904196009CF85D /* TelephoneEn.plist */,
+				91A363CB1B9535A600D90D7B /* TelephoneJP.plist */,
 				91A1CAA01B9017CD009CF85D /* main.m */,
 			);
 			name = "Supporting Files";
@@ -220,6 +228,7 @@
 				91A1CAAC1B9017CD009CF85D /* Images.xcassets in Resources */,
 				91A1CACC1B9032E6009CF85D /* TelephoneViewController.xib in Resources */,
 				91A1CACE1B904196009CF85D /* TelephoneEn.plist in Resources */,
+				91A363CC1B9535A600D90D7B /* TelephoneJP.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,6 +249,7 @@
 				91A1CACB1B9032E6009CF85D /* TelephoneViewController.m in Sources */,
 				91A1CAA41B9017CD009CF85D /* AppDelegate.m in Sources */,
 				91A1CAA11B9017CD009CF85D /* main.m in Sources */,
+				91A363CF1B9537BF00D90D7B /* Utils.m in Sources */,
 				91A1CAD11B904A94009CF85D /* ControyViewController.m in Sources */,
 				91A1CADC1B90570F009CF85D /* CountryTableViewCell.m in Sources */,
 			);

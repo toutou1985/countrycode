@@ -9,6 +9,7 @@
 #define UIScreenHeight [UIScreen mainScreen].bounds.size.height
 #import "ControyViewController.h"
 #import "CountryTableViewCell.h"
+#import "Utils.h"
 @interface ControyViewController ()<UITableViewDelegate,UITableViewDataSource>
 
 @end
@@ -20,7 +21,7 @@
     if (self) {
         // Custom initialization
         self.dataDic = [[NSMutableDictionary alloc] init];
-        self.sectionNameArr = [[NSMutableArray alloc] initWithObjects:@"A",@"B",@"C",@"D",@"E",@"F",@"G",@"H",@"I",@"J",@"K",@"L",@"M",@"N",@"0",@"P",@"Q",@"R",@"S",@"T",@"U",@"V",@"W",@"X",@"Y",@"Z", nil];
+        self.sectionNameArr = [[NSMutableArray alloc] initWithObjects:@"A",@"B",@"C",@"D",@"E",@"F",@"G",@"H",@"I",@"J",@"K",@"L",@"M",@"N",@"O",@"P",@"Q",@"R",@"S",@"T",@"U",@"V",@"W",@"X",@"Y",@"Z", nil];
     }
     return self;
 }
@@ -44,13 +45,25 @@
 }
 - (void)loadData{
     //获取路径对象
-    NSString *path = [[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES)objectAtIndex:0]stringByAppendingPathComponent:@"TelephoneEn.plist"];
-    
-    //根据路径获取test.plist的全部内容
-    NSMutableDictionary *infolist= [[[NSMutableDictionary alloc]initWithContentsOfFile:path]mutableCopy];
-    [self.dataDic addEntriesFromDictionary:infolist];
-    NSLog(@"infolist---%@",self.dataDic);
+    NSString * language = [Utils getPreferredLanguage];
+    if ([language isEqualToString:@"en"]) {
+        NSString *path = [[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES)objectAtIndex:0]stringByAppendingPathComponent:@"TelephoneEn.plist"];
+        
+        //根据路径获取test.plist的全部内容
+        NSMutableDictionary *infolist= [[[NSMutableDictionary alloc]initWithContentsOfFile:path]mutableCopy];
+        [self.dataDic addEntriesFromDictionary:infolist];
+        NSLog(@"infolist---%@",self.dataDic);
 
+    }else{
+        NSString *path = [[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES)objectAtIndex:0]stringByAppendingPathComponent:@"TelephoneJP.plist"];
+        
+        //根据路径获取test.plist的全部内容
+        NSMutableDictionary *infolist= [[[NSMutableDictionary alloc]initWithContentsOfFile:path]mutableCopy];
+        [self.dataDic addEntriesFromDictionary:infolist];
+        NSLog(@"infolist---%@",self.dataDic);
+    }
+    
+    
 }
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     return 30;
@@ -100,7 +113,7 @@
             return [self dickey:@"N"];
             break;
         case 14:
-            return [self dickey:@"0"];
+            return [self dickey:@"O"];
             break;
         case 15:
             return [self dickey:@"P"];
